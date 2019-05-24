@@ -1,7 +1,7 @@
 ---
 title: Node 基于 phantom 生成网页快照
 date: 2019-05-20 17:14:28
-urlname: Node 基于 phantom 生成网页快照
+urlname: html2image
 tags:
 ---
 
@@ -34,11 +34,11 @@ apt-get install xfonts-wqy
 可能会因为字体问题导致效果不一致
 
 #### windows 下效果
-![windows-image](http://144.34.199.163:3000/images/windows-image.png)
-#### linux 下效果
-![linux-image](http://144.34.199.163:3000/images/linux-image.png)
+![windows-image](http://144.34.199.163/images/windows-image.jpg)
+<!-- #### linux 下效果
+![linux-image](http://144.34.199.163:3000/images/linux-image.png) -->
 #### linux 下乱码效果
-![linux-no-image](http://144.34.199.163:3000/images/linux-no-image.png)
+![linux-no-image](http://144.34.199.163/images/linux-no-image.png)
 
 
 
