@@ -7,9 +7,10 @@ tags:
 
 这里用的是 phantom
 
-[仓库地址](https://github.com/gdrpAPeng/koa2-template/blob/master/routes/tools.js)
+[代码地址](https://github.com/gdrpAPeng/koa2-template/blob/master/routes/tools.js)
 
 <!-- more -->
+> https://www.jianshu.com/p/573dc94fb3ca 安装 phantomjs
 
 ### 1、安装依赖
 ```
