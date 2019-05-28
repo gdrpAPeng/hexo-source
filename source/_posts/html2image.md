@@ -10,7 +10,7 @@ tags:
 [代码地址](https://github.com/gdrpAPeng/koa2-template/blob/master/routes/tools.js)
 
 <!-- more -->
-> https://www.jianshu.com/p/573dc94fb3ca 安装 phantomjs
+ https://www.jianshu.com/p/573dc94fb3ca 安装 phantomjs
 
 ### 1、安装依赖
 ```
@@ -23,7 +23,7 @@ const phantom = require("phantom");
 ```
 
 ### 3、效果
-> 这里遇到个问题，在 windows 上运行没啥问题，放到 linux 就出现乱码，发现是缺少字体的问题
+ 这里遇到个问题，在 windows 上运行没啥问题，放到 linux 就出现乱码，发现是缺少字体的问题
 ```
 // 根据系统选择以下命令
 // centos
