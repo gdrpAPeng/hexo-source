@@ -13,8 +13,10 @@ tags:
  https://www.jianshu.com/p/573dc94fb3ca 安装 phantomjs
 
 ### 1、安装依赖
-```
+```c
 npm install phantom
+// 可能会找不到 phantomjs -- 安装一下就好了，跟着报错走
+npm install phantomjs 
 ```
 
 ### 2、引入 phantom
@@ -24,7 +26,7 @@ const phantom = require("phantom");
 
 ### 3、效果
  这里遇到个问题，在 windows 上运行没啥问题，放到 linux 就出现乱码，发现是缺少字体的问题
-```
+```c
 // 根据系统选择以下命令
 // centos
 yum install bitmap-fonts bitmap-fonts-cjk 
