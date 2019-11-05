@@ -30,3 +30,57 @@ tags:
   }
 }
 ```
+
+### 代码代码代码 👇👇👇
+
+```js
+async webhooks(req, res, next) {
+    // 避免超时，接收到 github 发来的消息直接返回 success
+    res.json({
+        message: 'Success'
+    })
+    // 在传来的消息里获取到仓库名字、git clone 地址
+    const { name, git_url } = req.body.repository
+    // 自定义配置的项目根路径
+    const { rootPath } = config
+    // repository.name
+    // repository.git_url
+    const dirPath = path.join(rootPath, `/${name}`)
+    try {
+       await fs.accessSync(dirPath) // 检查是否存在目录
+    } catch(e) {
+        // clone
+       await execSync(`git clone ${git_url}`, {
+           // cwd 执行环境， 位置 类似 cd 命令
+           cwd: rootPath
+       })
+    }
+
+    // 获取项目配置命令
+    let projectConfig = JSON.parse(
+        // webhook.config.json 每个项目的 webhook 配置都在这里
+        // {
+        //     "projectName": "webhooks",
+        //     "rootPath": "/home/project",
+        //     "commands": [
+        //         "yarn"
+        //     ]
+        // }
+        fs.readFileSync(`${dirPath}/webhook.config.json`).toString('utf-8')
+    ) 
+
+    // 拉取更新代码 并 执行 各个项目不同的指令
+    let commandsStr = [
+        `git pull`,
+        ...projectConfig.commands
+    ].join(' & ')
+
+    try {
+        await execSync(commandsStr, {
+            cwd: dirPath
+        })
+    } catch(e) {
+        console.log(e)
+    }
+}
+```
