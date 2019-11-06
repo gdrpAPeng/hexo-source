@@ -11,6 +11,9 @@ tags:
 
 <!-- more -->
 
+* 进入到 github 仓库 Settings
+* 左侧菜单 Webhooks 项 Add webhook 即可设置接口地址
+
 将接口地址挂到 github 仓库上的 webhooks 之后，触发更新条件 github 就会给你发送如下一堆数据，然后你就可以根据自己的需求为所欲为为所欲为为所欲为了
 ```js
 {
