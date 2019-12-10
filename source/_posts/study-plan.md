@@ -1,11 +1,11 @@
 ---
-title: study plan
-urlname: study plan
+title: 小结
+urlname: summary
 date: 2019-11-07 17:59:59
 tags:
 ---
 
-记录总结每一次的进步
+整理一下
 
 <!-- more -->
 
@@ -20,11 +20,13 @@ tags:
 
 ### 进阶
 
-- webSocket
-- indexDB
+- WebSocket
+- IndexedDB
 - MongoDB
-- typescript
-- react
+- Typescript
+- React
+- Pwa
+- Service Worker
 
 ### 数据结构
 
