@@ -9,6 +9,15 @@ tags:
 
 <!-- more -->
 
+> 记录一下每天看博客的一两句总结
+
+#### 前端模块化
+- 每个文件都是一个模块，都有自己的作用域
+
+#### ES Module 和 CommonJs 的区别
+- ES Module 是对值的引用 (可以当成全局变量来用)
+- CommonJs 是对值的拷贝
+
 ## webSocket
 
 ### socket.io
