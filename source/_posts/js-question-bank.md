@@ -41,7 +41,7 @@ tags:
       >
       > '55' - 0 // return 55
       >
-      > + '12' // return 12
+      >  \+ '12' // return 12
 
 5. DOM 是什么？
 
